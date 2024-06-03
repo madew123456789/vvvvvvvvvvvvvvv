@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+
+       
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body oncontextmenu="return false;">
+  
+
+  <style>
+  /* Prevent text selection for better security */
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+  }
+</style>
+<script>
+  // Disable right-click as soon as the script is parsed
+  (function() {
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    }, { capture: true });
+  })();
+</script>
+
+<style>
+    /* Disable dragging for all elements */
+    * {
+        user-drag: none;
+        -webkit-user-drag: none; /* For Safari */
+    }
+
+    /* Optionally, allow dragging for specific elements */
+    .allow-drag {
+        user-drag: auto;
+        -webkit-user-drag: auto; /* For Safari */
+    }
+</style>
+</head>
+<body>
+    
+    <!-- Example elements -->
+    <div id="element1"></div>
+    <div id="element2" class="allow-drag"></div>
+</body>
+    <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = 'https://youareanidiot.cc/';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+
+ 
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+</head>
+<body>
+  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Redirecting to another page using meta tag -->
+    <meta
+      http-equiv="refresh"
+      content="6; url =/index2.html"
+    />
+  </head>
+  <body>
+    
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="https://cdn.glitch.global/47323e98-c968-4907-98f1-eb338039836a/HQOkfpDgRLFJYY1WAaL7--1--u93g5_15.625x-modified.png?v=1715150023152"
+    />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/47323e98-c968-4907-98f1-eb338039836a/HQOkfpDgRLFJYY1WAaL7-1-u93g5_15.625x-modified.ico?v=1715150177181"
+    />
+
+    <title>Digital Vesak 2024</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <meta name="google" value="notranslate" />
+
+    <style>
+      html,
+      body {
+        background: black;
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .phone {
+        height: 50px;
+        width: 100px;
+        border: 3px solid white;
+        border-radius: 10px;
+        -webkit-animation: rotate 1.5s ease-in-out infinite alternate;
+        animation: rotate 1.5s ease-in-out infinite alternate;
+        /* display: none; */
+      }
+
+      .message {
+        color: white;
+        font-size: 1em;
+        margin-top: 40px;
+        /* display: none; */
+      }
+
+      @-webkit-keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-90deg);
+        }
+        100% {
+          transform: rotate(-90deg);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-90deg);
+        }
+        100% {
+          transform: rotate(-90deg);
+        }
+      }
+
+      @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+        .phone,
+        .message {
+          display: block;
+        }
+      }
+    </style>
+
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+    <head>
+      <body translate="no">
+        <div class="phone"></div>
+        <div class="message">
+          ඔබගේ උපාංගය දුරකථනයක් නම් කරුණාකර ඔබගේ දුරකථනය මෙස‌ේ කරකවන්න!
+        </div>
+      </body>
+      <html>
+        <div>
+          <!-- /Demo content -->
+
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <script>
+            window.jQuery ||
+              document.write(
+                '<script src="js/vendor/jquery-1.9.1.min.js"><\/script>'
+              );
+          </script>
+          <script src="main.js"></script>
+
+          <script>
+            /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+            document.onkeydown = function (e) {
+              if (
+                e.ctrlKey &&
+                (e.keyCode === 67 ||
+                  e.keyCode === 86 ||
+                  e.keyCode === 85 ||
+                  e.keyCode === 117)
+              ) {
+                //Alt+c, Alt+v will also be disabled sadly.
+                alert("You are an idiot");
+              }
+              return false;
+            };
+          </script>
+
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script>
+            document.onkeydown = function (e) {
+              if (
+                e.ctrlKey &&
+                (e.keyCode === 67 ||
+                  e.keyCode === 86 ||
+                  e.keyCode === 85 ||
+                  e.keyCode === 117)
+              ) {
+                return false;
+              } else {
+                return true;
+              }
+            };
+            $(document).keypress("u", function (e) {
+              if (e.ctrlKey) {
+                return false;
+              } else {
+                return true;
+              }
+            });
+          </script>
+
+          <script>
+                 <script language="JavaScript">
+
+                   window.onload = function () {
+                       document.addEventListener("contextmenu", function (e) {
+                           e.preventDefault();
+                       }, false);
+                       document.addEventListener("keydown", function (e) {
+                           //document.onkeydown = function(e) {
+                           // "I" key
+                           if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                               disabledEvent(e);
+                           }
+                           // "J" key
+                           if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                               disabledEvent(e);
+                           }
+                           // "S" key + macOS
+                           if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                               disabledEvent(e);
+                           }
+                           // "U" key
+                           if (e.ctrlKey && e.keyCode == 85) {
+                               disabledEvent(e);
+                           }
+                           // "F12" key
+                           if (event.keyCode == 123) {
+                               disabledEvent(e);
+                           }
+                       }, false);
+                       function disabledEvent(e) {
+                           if (e.stopPropagation) {
+                               e.stopPropagation();
+                           } else if (window.event) {
+                               window.event.cancelBubble = true;
+                           }
+                           e.preventDefault();
+                           return false;
+                       }
+                   }
+            //edit: removed ";" from last "}" because of javascript error
+          </script>
+          
+<div id="player">
+      <audio controls autoplay hidden>
+        <source
+          src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/ElevenLabs_2024-06-02T10_04_13_Glinda_pre_s50_sb75_se0_b_m2.mp3?v=1717322821298"
+          type="audio/mp3"
+        />
+        unsupported !!
+      </audio>
+      
+                        <div id="player">
+                    <audio controls autoplay hidden>
+                      <source
+                        src="https://cdn.glitch.global/47323e98-c968-4907-98f1-eb338039836a/vid-27220203-110524-748-61314%20(1).mp3?v=1717323815796"
+                        type="audio/mp3"
+                      />
+                      unsupported !!
+                    </audio>
+                           <script>
+        document.getElementById('audioToggle').addEventListener('change', function() {
+            var audio = document.getElementById("myAudio");
+            if (this.checked) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+                          
+                          <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var played = false;  // To ensure it doesn't play again if already played
+    document.body.addEventListener('click', function() {
+        if (!played) {
+            document.getElementById('myAudio').play();
+            played = true;
+        }
+    }, false);
+});
+</script>
+
+                          
+        </div>
+      </html>
+    </head>
+  </body>
+</html>
+</body>
